@@ -1,4 +1,4 @@
-# 🌸 Devraj Desai Portfolio
+# 🌸 Sakura Portfolio
 
 A modern Japanese-inspired portfolio website showcasing my achievements, projects, technical skills, and competitive programming journey.
 
