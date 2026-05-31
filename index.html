@@ -12,9 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v13/font/simple-icons.min.css"/>
 
   <style>
-    /* =========================================================
-       ROOT VARIABLES
-    ========================================================= */
+    /* ROOT VARIABLES */
     :root {
       --bg:          #07070e;
       --bg2:         #0d0d1a;
@@ -50,7 +48,7 @@
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--sakura-dark); border-radius:2px; }
 
-    /* ── CURSOR ─────────────────────────────────────────── */
+    /* CURSOR */
     #cursor-dot {
       width:10px; height:10px;
       background: var(--sakura);
@@ -75,14 +73,14 @@
     body:has(a:hover) #cursor-ring,
     body:has(button:hover) #cursor-ring { width:54px; height:54px; border-color:var(--sakura); }
 
-    /* ── SAKURA CANVAS ──────────────────────────────────── */
+    /* SAKURA CANVAS */
     #petals-canvas {
       position:fixed; top:0; left:0;
       width:100%; height:100%;
       pointer-events:none; z-index:1;
     }
 
-    /* ── NOISE TEXTURE OVERLAY ──────────────────────────── */
+    /* NOISE TEXTURE OVERLAY */
     body::after {
       content:'';
       position:fixed; inset:0;
@@ -90,9 +88,7 @@
       pointer-events:none; z-index:0; opacity:0.4;
     }
 
-    /* =========================================================
-       NAVIGATION
-    ========================================================= */
+    /* NAVIGATION */
     #navbar {
       position:fixed; top:0; left:0; right:0; z-index:200;
       padding:1.6rem 3.5rem;
@@ -133,9 +129,7 @@
     }
     .hamburger span { display:block; width:22px; height:1.5px; background:var(--text); transition:all .3s; }
 
-    /* =========================================================
-       HERO SECTION
-    ========================================================= */
+    /* HERO SECTION */
     #hero {
       height:100vh; position:relative;
       display:flex; flex-direction:column;
@@ -219,9 +213,7 @@
       animation:scrollPulse 2s ease-in-out infinite;
     }
 
-    /* =========================================================
-       SECTION SHARED
-    ========================================================= */
+    /* SECTION SHARED */
     section { position:relative; z-index:2; }
     .wrap { max-width:1080px; margin:0 auto; padding:7rem 2rem; }
 
@@ -246,9 +238,7 @@
     .r.d3 { transition-delay:.3s; }
     .r.d4 { transition-delay:.4s; }
 
-    /* =========================================================
-       ABOUT SECTION
-    ========================================================= */
+    /* ABOUT SECTION */
     #about { background:linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%); }
 
     .about-grid {
@@ -319,9 +309,7 @@
       transform:translateY(-2px);
     }
 
-    /* =========================================================
-       PROJECTS SECTION
-    ========================================================= */
+    /* PROJECTS SECTION */
     #projects { background:var(--bg2); }
     .projects-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(316px,1fr)); gap:1.4rem; }
 
@@ -356,9 +344,7 @@
     }
     .proj-link:hover { color:var(--sakura); }
 
-    /* =========================================================
-       ACHIEVEMENTS SECTION
-    ========================================================= */
+    /* ACHIEVEMENTS SECTION */
     #achievements { background:var(--bg); }
     .ach-list { display:flex; flex-direction:column; gap:1rem; }
 
@@ -391,9 +377,7 @@
     .ach-title { font-family:var(--font-d); font-size:1rem; color:var(--text); margin-bottom:.3rem; }
     .ach-desc { font-size:.83rem; color:var(--muted); line-height:1.65; }
 
-    /* =========================================================
-       CONTACT SECTION
-    ========================================================= */
+    /* CONTACT SECTION */
     #contact { background:var(--bg2); position:relative; overflow:hidden; }
     #contact::before {
       content:'連絡'; position:absolute;
@@ -439,9 +423,7 @@
     .soc-btn:hover::before { transform:scaleY(1); }
     .soc-btn:hover i { color:#07070e; }
 
-    /* =========================================================
-       FOOTER
-    ========================================================= */
+    /* FOOTER */
     footer {
       background:var(--bg); border-top:1px solid var(--border);
       padding:2.4rem 2rem; text-align:center; position:relative; z-index:2;
@@ -450,17 +432,13 @@
     .footer-copy { font-size:.72rem; color:var(--muted); letter-spacing:.1em; }
     .footer-copy em { color:var(--sakura); font-style:normal; }
 
-    /* =========================================================
-       ANIMATED DIVIDER
-    ========================================================= */
+    /* ANIMATED DIVIDER */
     .wave-div {
       height:64px; position:relative; overflow:hidden; z-index:2;
     }
     .wave-div svg { position:absolute; bottom:0; width:100%; }
 
-    /* =========================================================
-       KEYFRAMES
-    ========================================================= */
+    /* KEYFRAMES */
     @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:none; } }
     @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
     @keyframes scrollPulse {
@@ -476,9 +454,7 @@
       0%,100% { transform:translateY(0); } 50% { transform:translateY(-6px); }
     }
 
-    /* =========================================================
-       MOBILE RESPONSIVE
-    ========================================================= */
+    /* MOBILE RESPONSIVE */
     @media (max-width:900px) {
       #navbar { padding:1.2rem 1.8rem; }
       #navbar.scrolled { padding:.9rem 1.8rem; }
@@ -494,7 +470,7 @@
       .ach-year { font-size:1.3rem; min-width:auto; }
     }
 
-    /* ── Mobile nav drawer ────────────────────────────────── */
+    /* Mobile nav drawer  */
     .mobile-nav {
       display:none; position:fixed; inset:0;
       background:rgba(7,7,14,.97); backdrop-filter:blur(20px);
@@ -533,9 +509,7 @@
   <a href="#contact"      onclick="closeMobileNav()">Contact</a>
 </nav>
 
-<!-- ══════════════════════════════════════════
-     NAVIGATION
-════════════════════════════════════════════ -->
+<!--NAVIGATION-->
 <nav id="navbar">
   <a href="#hero" class="nav-brand">
     <span id="nav-first-name">Portfolio</span>
@@ -552,9 +526,7 @@
   </div>
 </nav>
 
-<!-- ══════════════════════════════════════════
-     HERO
-════════════════════════════════════════════ -->
+<!--HERO-->
 <section id="hero">
   <div class="hero-glow"></div>
 
@@ -609,16 +581,14 @@
   </style>
 </section>
 
-<!-- ══════════════════════════════════════════
-     ABOUT
-════════════════════════════════════════════ -->
+<!--ABOUT-->
 <section id="about">
   <div class="wrap">
     <div class="sec-head r">
       <span class="sec-kanji">自己</span>
       <div class="sec-titles">
         <span class="sec-num">01 / ABOUT</span>
-        <h2 class="sec-title">Who I Am</h2>
+        <h2 class="sec-title">Who I Am?</h2>
       </div>
       <div class="sec-rule"></div>
     </div>
@@ -626,7 +596,7 @@
     <div class="about-grid">
       <!-- Left: Photo + Info -->
       <div class="photo-wrap r">
-        <div class="photo-frame" id="photo-frame"><!-- JS fills --></div>
+        <div class="photo-frame" id="photo-frame"></div>
         <div class="info-card">
           <div class="info-row"><span class="info-label">College</span><span class="info-val" id="info-college">—</span></div>
           <div class="info-row"><span class="info-label">Branch</span> <span class="info-val" id="info-branch">—</span></div>
@@ -635,19 +605,17 @@
         </div>
       </div>
 
-      <!-- Right: Bio + Skills -->
+      <!-- Right: Bio+Skills -->
       <div class="r d1">
         <p class="about-bio" id="about-bio">Loading…</p>
         <p class="skills-label">SKILLS &amp; TECHNOLOGIES</p>
-        <div class="skills-wrap" id="skills-wrap"><!-- JS fills --></div>
+        <div class="skills-wrap" id="skills-wrap"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     PROJECTS
-════════════════════════════════════════════ -->
+<!--PROJECTS-->
 <section id="projects">
   <div class="wrap">
     <div class="sec-head r">
@@ -658,13 +626,11 @@
       </div>
       <div class="sec-rule"></div>
     </div>
-    <div class="projects-grid" id="projects-grid"><!-- JS fills --></div>
+    <div class="projects-grid" id="projects-grid"></div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     ACHIEVEMENTS
-════════════════════════════════════════════ -->
+<!--ACHIEVEMENTS-->
 <section id="achievements">
   <div class="wrap">
     <div class="sec-head r">
@@ -675,13 +641,11 @@
       </div>
       <div class="sec-rule"></div>
     </div>
-    <div class="ach-list" id="ach-list"><!-- JS fills --></div>
+    <div class="ach-list" id="ach-list"></div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     CONTACT
-════════════════════════════════════════════ -->
+<!-- CONTACT -->
 <section id="contact">
   <div class="wrap">
     <div class="contact-box">
@@ -693,27 +657,23 @@
       </div>
       <p class="contact-sub r d1" id="contact-sub">Open to opportunities &amp; collaborations.</p>
       <a href="#" class="contact-email r d2" id="contact-email-link">your@email.com</a><br/><br/>
-      <div class="socials r d3" id="socials"><!-- JS fills --></div>
+      <div class="socials r d3" id="socials"></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer>
   <p class="footer-jp">ありがとう</p>
   <p class="footer-copy">© <span id="f-year"></span> <em id="f-name">—</em> · Crafted with <em>桜</em> &amp; code</p>
 </footer>
 
 
-<!-- ═══════════════════════════════════════════════════════════════
-     CONFIG
-════════════════════════════════════════════════════════════════ -->
+<!--CONFIG -->
 <script>
 const CONFIG = {
 
-  /* ── PERSONAL ──────────────────────────────────────────────── */
+  /* PERSONAL */
   name:     "Devraj Desai",          
   nameJP:   "デヴラージ",             
   roles: [                          
@@ -732,13 +692,13 @@ const CONFIG = {
   I also enjoy exploring imaginative worlds through fantasy novels and unwind as a light gamer.
   This mix of technical focus, cultural curiosity, and creative pursuits shapes both my learning and my work. `,
 
-  /* ── PROFILE PHOTO(URL or base64) ─────────────────────────────────────────── */
+  /* PROFILE PHOTO(URL or base64) */
   photo: "https://i.postimg.cc/gr9bcnwJ/photo-jpg.jpg",
 
-  /* ── RÉSUMÉ ────────────────────────────────────────────────── */
+  /* RÉSUMÉ */
   resumeURL: "#",
 
-  /* ── SKILLS ────────────────────────────────────────────────── */
+  /* SKILLS */
   skills: [
     "C++", "Java", "C", "Python",
     "R", "Pandas", "SQL", "Seaborn",
@@ -746,7 +706,7 @@ const CONFIG = {
     "Linux", "HTML", "Competitive Programming", "Machine Learning",
   ],
 
-  /* ── LINKS ─────────────────────────────────────────────────── */
+  /* LINKS */
   links: {
     email:     "devrajdesai4747@gmail.com",
     github:    "https://github.com/devraj-desai",
@@ -760,7 +720,7 @@ const CONFIG = {
     portfolio: "",         
   },
 
-  /* ── PROJECTS ──────────────────────────────────────────────── */
+  /*PROJECTS*/
   projects: [
     {
       name:   "Portfolio Website",
