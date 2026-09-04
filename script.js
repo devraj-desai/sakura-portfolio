@@ -1,6 +1,5 @@
-/* ==========================================================
+/* 
    PORTFOLIO CONFIG
-   ========================================================== */
 const CONFIG = {
   /* PERSONAL */
   name: "Devraj Desai",
@@ -131,9 +130,9 @@ const CONFIG = {
     "Open to internships, full-time roles, and exciting collaborations. Drop me a line and let's build something meaningful together.",
 };
 
-/* ==========================================================
+/* 
    POPULATE DOM
-   ========================================================== */
+*/
 (function populate() {
   const S = CONFIG;
   const firstName = S.name.split(" ")[0];
@@ -255,9 +254,9 @@ const CONFIG = {
   document.getElementById("f-name").textContent = S.name;
 })();
 
-/* ==========================================================
+/*
    TYPEWRITER EFFECT
-   ========================================================== */
+*/
 (function typewriter() {
   const el = document.getElementById("typed-text");
   const words = CONFIG.roles;
@@ -288,9 +287,9 @@ const CONFIG = {
   setTimeout(tick, 1000);
 })();
 
-/* ==========================================================
+/*
    CUSTOM CURSOR
-   ========================================================== */
+*/
 (function cursor() {
   const dot = document.getElementById("cursor-dot");
   const ring = document.getElementById("cursor-ring");
@@ -335,16 +334,16 @@ const CONFIG = {
   });
 })();
 
-/* ==========================================================
+/*
    NAVBAR SCROLL
-   ========================================================== */
+*/
 window.addEventListener("scroll", () => {
   document.getElementById("navbar").classList.toggle("scrolled", scrollY > 60);
 });
 
-/* ==========================================================
+/*
    MOBILE NAV
-   ========================================================== */
+*/
 function openMobileNav() {
   document.getElementById("mobile-nav").classList.add("open");
 }
@@ -355,9 +354,9 @@ document
   .getElementById("mobile-close")
   .addEventListener("click", closeMobileNav);
 
-/* ==========================================================
+/*
    SCROLL REVEAL
-   ========================================================== */
+*/
 (function revealInit() {
   const obs = new IntersectionObserver(
     (entries) => {
@@ -373,9 +372,9 @@ document
   document.querySelectorAll(".r").forEach((el) => obs.observe(el));
 })();
 
-/* ==========================================================
+/*
    SAKURA PETAL CANVAS
-   ========================================================== */
+*/
 (function sakura() {
   const canvas = document.getElementById("petals-canvas");
   const ctx = canvas.getContext("2d");
@@ -461,9 +460,9 @@ document
   })();
 })();
 
-/* ==========================================================
-   HERO PARALLAX (subtle)
-   ========================================================== */
+/*
+   HERO PARALLAX 
+*/
 window.addEventListener("scroll", () => {
   const y = window.scrollY;
   const hero = document.querySelector(".hero-silhouette");
