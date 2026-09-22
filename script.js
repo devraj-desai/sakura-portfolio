@@ -87,8 +87,8 @@ const CONFIG = {
     {
       name: "SubTherm",
       type: "Deep Learning",
-      desc: "An interactive frontend prototype for reconstructing subsurface ocean temperature profiles from surface satellite observations, built for the North Indian Ocean (5–30°N, 45–105°E) at 0.25° spatial resolution. The tool is designed around a proposed deep learning approach that would compress surface variables — SST, SSS, SSH/SLA, and surface currents (u, v) — into a learned satellite embedding and decode it into a full-depth temperature profile across 15 standard depth levels (0–1000 m).",
-      tech: ["Python", "Streamlit", "Folium", "Plotly", "NumPy", "SciPy"],
+      desc: "An interactive prototype for reconstructing subsurface ocean temperature profiles from surface satellite observations (SST, SSS, SSH, surface currents) across the North Indian Ocean. Powered by a custom CNN + Transformer + U-Net hybrid model that reconstructs full-depth temperature volumes in a single forward pass, with point-based depth profiling and region-based statistical analysis via an interactive map.",
+      tech: ["Python", "PyTorch", "Streamlit", "Folium", "Plotly", "NumPy", "SciPy"],
       github: "https://github.com/devraj-desai/SubTherm",
       live: "https://subtherm.streamlit.app/",
     },
