@@ -27,7 +27,7 @@ This portfolio serves as a personal platform to highlight my work in software de
 
 ## About Me
 
-I am a Computer Science student and competitive programmer with interests in software development, problem solving, machine learning, and open-source contributions.
+I am a AI student and competitive programmer with interests in machine learning and deep learning.
 
 ### Achievements
 
@@ -35,7 +35,7 @@ I am a Computer Science student and competitive programmer with interests in sof
 * Qualified JEE Advanced
 * GirlScript Summer of Code Contributor
 * Codeforces Specialist
-* CodeChef 2★ Programmer
+* CodeChef 3★ Programmer
 
 ## Contact
 
