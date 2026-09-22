@@ -15,7 +15,7 @@ const CONFIG = {
   status: "Open to Opportunities",
   bio: `A passionate engineer driven by a strong passion for artificial intelligence and competitive programming.
   I thrive on solving complex problems and believe in action over words.
-  My interests extend beyond technology—I am fluent in Japanese and deeply inspired by its culture.
+  My interests extend beyond technology—I can understand Japanese very well and can speak it upto N4 level. I am deeply inspired by Japanese culture.
   I also enjoy exploring imaginative worlds through fantasy novels and unwind as a light gamer.
   This mix of technical focus, cultural curiosity, and creative pursuits shapes both my learning and my work. `,
 
@@ -43,6 +43,11 @@ const CONFIG = {
     "HTML",
     "Competitive Programming",
     "Machine Learning",
+    "Deep Learning",
+    "Computer Vision",
+    "Natural Language Processing",
+    "RAG",
+    "LangChain",
   ],
 
   /* LINKS */
@@ -57,6 +62,7 @@ const CONFIG = {
     leetcode: "https://leetcode.com/u/Devraj_Desai/",
     codeforces: "https://codeforces.com/profile/Devraj_Desai",
     codechef: "https://www.codechef.com/users/devraj_desai",
+    codolio: "https://codolio.com/profile/WHITE474",
     portfolio: "",
   },
 
@@ -71,20 +77,20 @@ const CONFIG = {
       live: "https://devraj-desai.github.io/sakura-portfolio/",
     },
     {
-      name: "Coming Soon",
+      name: "Loan Approval Prediction",
       type: "Machine Learning",
-      desc: "",
-      tech: ["Python", "TensorFlow", "Flask", "OpenCV"],
-      github: "",
-      live: "",
+      desc: "A machine learning model to predict loan approval based on customer data using Gaussian Naive Bayes. You can train the model by just uploading a CSV file containing the relevant data.",
+      tech: ["Python", "Scikit-learn", "Streamlit", "Pandas", "NumPy"],
+      github: "https://github.com/devraj-desai/CreditWise-loan-system",
+      live: "https://loanmilakya.streamlit.app/",
     },
     {
-      name: "Coming Soon",
-      type: "Machine Learning",
-      desc: "",
-      tech: [""],
-      github: "",
-      live: "",
+      name: "SubTherm",
+      type: "Deep Learning",
+      desc: "An interactive frontend prototype for reconstructing subsurface ocean temperature profiles from surface satellite observations, built for the North Indian Ocean (5–30°N, 45–105°E) at 0.25° spatial resolution. The tool is designed around a proposed deep learning approach that would compress surface variables — SST, SSS, SSH/SLA, and surface currents (u, v) — into a learned satellite embedding and decode it into a full-depth temperature profile across 15 standard depth levels (0–1000 m).",
+      tech: ["Python", "Streamlit", "Folium", "Plotly", "NumPy", "SciPy"],
+      github: "https://github.com/devraj-desai/SubTherm",
+      live: "https://subtherm.streamlit.app/",
     },
     {
       name: "Coming Soon",
@@ -113,13 +119,13 @@ const CONFIG = {
     {
       year: "2026",
       title: "Specialist at Codeforces",
-      desc: "Achieved Specialist title at World's leading Competitive Programming platform Codeforces in 10 contest.",
+      desc: "Achieved Specialist title at World's leading Competitive Programming platform Codeforces in 12 contest.",
       icon: "fa-trophy",
     },
     {
       year: "2026",
-      title: "2⭐ at CodeChef",
-      desc: "Achieved 2⭐ rank at CodeChef in 9 contests.",
+      title: "3⭐ at CodeChef",
+      desc: "Achieved 3⭐ rank at CodeChef in 10 contests.",
       icon: "fa-star",
     },
   ],
