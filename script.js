@@ -1,5 +1,4 @@
-/* 
-   PORTFOLIO CONFIG
+/* PORTFOLIO CONFIG */
 const CONFIG = {
   /* PERSONAL */
   name: "Devraj Desai",
