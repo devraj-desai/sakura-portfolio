@@ -23,7 +23,7 @@ const CONFIG = {
   photo: "https://i.postimg.cc/gr9bcnwJ/photo-jpg.jpg",
 
   /* RÉSUMÉ */
-  resumeURL: "#",
+  resumeURL: "https://drive.google.com/file/d/1NXG-zAvo_5ulzulEyHzWXyTeETP03T-0/view?usp=sharing",
 
   /* SKILLS */
   skills: [
