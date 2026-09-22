@@ -90,7 +90,7 @@ const CONFIG = {
       desc: "An interactive prototype for reconstructing subsurface ocean temperature profiles from surface satellite observations (SST, SSS, SSH, surface currents) across the North Indian Ocean. Powered by a custom CNN + Transformer + U-Net hybrid model that reconstructs full-depth temperature volumes in a single forward pass, with point-based depth profiling and region-based statistical analysis via an interactive map.",
       tech: ["Python", "PyTorch", "Streamlit", "Folium", "Plotly", "NumPy", "SciPy"],
       github: "https://github.com/devraj-desai/SubTherm",
-      live: "https://subtherm.streamlit.app/",
+      live: "https://subthermocean.streamlit.app/",
     },
     {
       name: "Coming Soon",
